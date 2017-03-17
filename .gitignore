@@ -1,3 +1,5 @@
+*.userprefs
+
 *.swp
 *.*~
 project.lock.json
