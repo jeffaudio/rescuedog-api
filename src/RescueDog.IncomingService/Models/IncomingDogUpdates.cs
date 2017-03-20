@@ -1,35 +1,18 @@
-﻿namespace RescueDog.Api.Models
+﻿namespace RescueDog.IncomingService.Models
 {
 	using System;
+	using RescueDog.Common.Models;
 
 	/// <summary>
 	/// Represents a potential foster dog.
 	/// </summary>
-	public class IncomingDog
+	public class IncomingDogUpdates
 	{
 		/// <summary>
 		/// Gets or sets the name of the dog.
 		/// </summary>
 		/// <value>The dog's incoming name.</value>
 		public string Name { get; set; }
-
-		/// <summary>
-		/// Gets or sets the date the dog was considered.
-		/// </summary>
-		/// <value>The date the record was created.</value>
-		public DateTimeOffset DateCreated { get; set; }
-
-		/// <summary>
-		/// Gets or sets the date the record was last modified.
-		/// </summary>
-		/// <value>The date modified.</value>
-		public DateTimeOffset DateModified { get; set; }
-
-		/// <summary>
-		/// Gets or sets the user ID who last modified the record..
-		/// </summary>
-		/// <value>The last modified user ID.</value>
-		public string ModifiedUserId { get; set; }
 
 		/// <summary>
 		/// Gets or sets the dog's current setting.
@@ -54,12 +37,6 @@
 		/// </summary>
 		/// <value>The dog's gender.</value>
 		public Gender Gender { get; set; }
-
-		/// <summary>
-		/// Gets or sets the age in years.
-		/// </summary>
-		/// <value>The dog's age in years, or null if unknown.</value>
-		public int? AgeYears { get; set; }
 
 		/// <summary>
 		/// Gets or sets the age range.
@@ -116,16 +93,10 @@
 		public Uri RelinquishFormUrl { get; set; }
 
 		/// <summary>
-		/// Gets or sets the incoming disposition.
-		/// </summary>
-		/// <value>The incoming disposition.</value>
-		public string IncomingDisposition { get; set; }
-
-		/// <summary>
 		/// Gets or sets the resolution.
 		/// </summary>
 		/// <value>The resolution.</value>
-		public IncomingResolution Resolution { get; set; }
+		public ResolutionType Resolution { get; set; }
 
 		/// <summary>
 		/// Gets or sets the resolution date.

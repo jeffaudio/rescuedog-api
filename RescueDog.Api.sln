@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RescueDog.Api", "src\RescueDog.Api\RescueDog.Api.csproj", "{0E01F365-D7B0-405F-BECF-0154F6C80FBA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RescueDog.IncomingService", "src\RescueDog.IncomingService\RescueDog.IncomingService.csproj", "{6A1E9DFF-3DE0-4F4F-A6CF-6291C3C534F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResuceDog.Common", "src\ResuceDog.Common\ResuceDog.Common.csproj", "{6A2F5E9F-A031-4A55-B3AC-A8C0F7EFD853}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +17,13 @@ Global
 		{0E01F365-D7B0-405F-BECF-0154F6C80FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E01F365-D7B0-405F-BECF-0154F6C80FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E01F365-D7B0-405F-BECF-0154F6C80FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A1E9DFF-3DE0-4F4F-A6CF-6291C3C534F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A1E9DFF-3DE0-4F4F-A6CF-6291C3C534F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A1E9DFF-3DE0-4F4F-A6CF-6291C3C534F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A1E9DFF-3DE0-4F4F-A6CF-6291C3C534F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A2F5E9F-A031-4A55-B3AC-A8C0F7EFD853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A2F5E9F-A031-4A55-B3AC-A8C0F7EFD853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A2F5E9F-A031-4A55-B3AC-A8C0F7EFD853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A2F5E9F-A031-4A55-B3AC-A8C0F7EFD853}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

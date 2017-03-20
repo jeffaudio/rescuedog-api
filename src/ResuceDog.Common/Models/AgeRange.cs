@@ -1,4 +1,4 @@
-namespace RescueDog.Api.Models
+namespace RescueDog.Common.Models
 {
 	using System;
 

@@ -1,14 +1,14 @@
-namespace RescueDog.Api.Models
+namespace RescueDog.IncomingService.Models
 {
 	/// <summary>
 	/// Incoming dog resolution
 	/// </summary>
-	public enum IncomingResolution
+	public enum ResolutionType
 	{
 		/// <summary>
-		/// GLBCR foster
+		/// Foster
 		/// </summary>
-		GlbcrFoster,
+		Foster,
 
 		/// <summary>
 		/// Courtesy listing

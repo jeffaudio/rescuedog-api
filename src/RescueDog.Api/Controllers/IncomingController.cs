@@ -1,13 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-
-namespace RescueDog.Api.Controllers
+﻿namespace RescueDog.Api.Controllers
 {
-    [Route("api/[controller]")]
-    public class ValuesController : Controller
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Threading.Tasks;
+	using Microsoft.AspNetCore.Mvc;
+
+	/// <summary>
+	/// Handles management of incoming dogs.
+	/// </summary>
+    [Route("api/v1")]
+    public class IncomingController : Controller
     {
         // GET api/values
         [HttpGet]
