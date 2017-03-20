@@ -18,7 +18,7 @@
 		/// Gets the incoming dog.
 		/// </summary>
 		/// <returns>The incoming dog.</returns>
-		/// <param name="id">Identifier.</param>
+		/// <param name="id">The incoming dog ID.</param>
 		IncomingDog GetIncomingDog(string id);
 
 		/// <summary>
