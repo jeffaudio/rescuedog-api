@@ -1,2 +1,4 @@
 language: csharp
 solution: RescueDog.Api.sln
+mono: none
+dotnet: 1.1.0
