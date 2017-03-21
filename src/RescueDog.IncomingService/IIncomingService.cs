@@ -33,21 +33,21 @@
 		/// </summary>
 		/// <returns>The updated incoming dog.</returns>
 		/// <param name="updates">The updated incoming dog.</param>
-		IncomingDog UpdateIncomingDog(IncomingDogUpdates updates);
+		IncomingDog UpdateIncomingDog(string id, IncomingDogUpdates updates);
 
 		/// <summary>
 		/// Sets the contact ID for an incoming dog..
 		/// </summary>
 		/// <param name="id">The incoming dog ID.</param>
 		/// <param name="contactId">The contact member ID.</param>
-		void SetContact(string id, string contactId);
+		IncomingDog SetContact(string id, string contactId);
 
 		/// <summary>
 		/// Resolves the incoming dog.
 		/// </summary>
 		/// <param name="id">The incoming dog ID.</param>
 		/// <param name="resolution">The incoming dog resolution.</param>
-		void ResolveIncomingDog(string id, IncomingResolutionDetails resolution);
+		IncomingDog ResolveIncomingDog(string id, IncomingResolutionDetails resolution);
 
 		/// <summary>
 		/// Removes an incoming dog completely.
