@@ -1,16 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-
-namespace RescueDog.Api
+﻿namespace RescueDog.Api
 {
-    public class Startup
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Threading.Tasks;
+	using Microsoft.AspNetCore.Builder;
+	using Microsoft.AspNetCore.Hosting;
+	using Microsoft.EntityFrameworkCore;
+	using Microsoft.Extensions.Configuration;
+	using Microsoft.Extensions.DependencyInjection;
+	using Microsoft.Extensions.Logging;
+	using RescueDog.Db;
+	using RescueDog.IncomingService;
+
+
+	public class Startup
     {
         public Startup(IHostingEnvironment env)
         {
@@ -27,8 +31,15 @@ namespace RescueDog.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+			// Add the database
+			services.AddDbContext<RescueDogDbContext>(options =>
+				options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
             // Add framework services.
             services.AddMvc();
+
+			// Add services
+			services.AddTransient<IIncomingService, IncomingService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

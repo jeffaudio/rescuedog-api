@@ -3,12 +3,22 @@
 	using System;
 	using System.Linq;
 	using Models;
-	using RescueDog.IncomingService.Db;
+	using RescueDog.Db;
+	using RescueDog.Db.Models;
 	using RescueDog.IncomingService.Exceptions;
 
 	public class IncomingService : IIncomingService
 	{
-		private readonly IncomingDbContext db;
+		private readonly RescueDogDbContext db;
+
+		/// <summary>
+		/// Initializes a new instance of the <see cref="T:RescueDog.IncomingService.IncomingService"/> class.
+		/// </summary>
+		/// <param name="context">The db context.</param>
+		public IncomingService(RescueDogDbContext context)
+		{
+			this.db = context;
+		}
 
 		/// <summary>
 		/// Adds the incoming dog.

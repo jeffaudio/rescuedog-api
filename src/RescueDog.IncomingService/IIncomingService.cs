@@ -1,6 +1,7 @@
 ﻿namespace RescueDog.IncomingService
 {
 	using System.Linq;
+	using RescueDog.Db.Models;
 	using RescueDog.IncomingService.Models;
 
 	/// <summary>

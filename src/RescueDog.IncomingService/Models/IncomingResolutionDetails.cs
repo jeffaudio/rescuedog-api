@@ -1,6 +1,7 @@
 ﻿namespace RescueDog.IncomingService.Models
 {
 	using System;
+	using RescueDog.Common.Models;
 
 	public class IncomingResolutionDetails
 	{

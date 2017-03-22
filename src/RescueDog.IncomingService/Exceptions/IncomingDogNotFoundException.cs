@@ -14,7 +14,7 @@ namespace RescueDog.IncomingService.Exceptions
 		/// </summary>
 		/// <param name="id">The incoming dog's identifier.</param>
 		public IncomingDogNotFoundException(string id)
-			: base(string.Format("Incoming dog '{0}' not found.", id)
+			: base(string.Format("Incoming dog '{0}' not found.", id))
 		{
 			this.Id = id;
 		}

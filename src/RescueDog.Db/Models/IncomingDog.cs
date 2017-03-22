@@ -1,4 +1,4 @@
-﻿namespace RescueDog.IncomingService.Models
+﻿namespace RescueDog.Db.Models
 {
 	using System;
 	using RescueDog.Common.Models;

@@ -1,4 +1,4 @@
-namespace RescueDog.IncomingService.Models
+namespace RescueDog.Common.Models
 {
 	/// <summary>
 	/// The urgency of placing an incoming dog.

@@ -14,4 +14,9 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RescueDog.IncomingService\RescueDog.IncomingService.csproj" />
+    <ProjectReference Include="..\RescueDog.Db\RescueDog.Db.csproj" />
+    <ProjectReference Include="..\ResuceDog.Common\ResuceDog.Common.csproj" />
+  </ItemGroup>
 </Project>
